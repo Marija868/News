@@ -1,0 +1,167 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(pozadina.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Simonetta', cursive;
+    text-align: justify;
+
+}
+
+#wrapper {
+    background-color: white;
+    width: 960px;
+    padding: 15px;
+    margin: 0 auto;
+    
+}
+
+#header {
+    background-color: #c51417;
+    margin-bottom: 10px;
+    overflow: hidden;
+
+}
+
+.logo{
+    padding-top: 15px;
+    padding-left: 35px;
+    padding-bottom: 15px;
+    float: left;
+}
+
+.slogan{
+    float: right;
+}
+
+.slogan p {
+    color: white;
+    font-size: 22px;
+    margin: 0;
+    padding: 5px;
+}
+
+#nav {
+    background-color: #333333;
+    overflow: hidden;
+}
+/*moze i bez overflow:hidden (provjeriti)*/
+
+#nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+/*ako ne zelimo one kruzice na listama, onda stavimo list-style: none */
+
+#nav ul li {
+    float: left;
+}
+
+#nav ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 12px;
+    display: block;
+}
+
+/*mislim da moze i bez display:block*/
+
+#nav ul li a:active,
+#nav ul li a:visited,
+#nav ul li a:link {
+    color: #fff;
+}
+
+#nav ul li a:hover {
+    background-color: #c51417;
+
+}
+ /*cetiri stanja u kojima link moze biti: 
+ active (kada kliknem na link pa bljesne necim drugim), 
+ visited (promeni npr boju kad je klijent vec posjetio link), 
+ hover ( uradi nesto kada klijent predje misom preko linka), 
+ link(njegovo pocetno stanje, pocetna stilizacija) */
+
+.social{
+    float: right;
+    margin: 6px 8px;
+
+}
+
+.social i{
+    font-size: 22px;
+    color: #fff;
+}
+
+.social i:hover{
+    color: #c51417;
+    cursor: pointer;
+}
+
+#main {
+    width: 700px;
+
+    float: left;
+}
+
+#sidebar {
+    width: 240px;
+
+    float: right;
+}
+
+#footer {
+    background-color: #333333;
+    clear: both;
+    padding: 5px;
+}
+
+#footer p{
+    text-align: center;
+    color: white;
+    margin: 0;
+}
+
+#sidebar h2{
+    background-color: #bbb;
+    color: #fff;
+    padding: 5px;
+}
+
+.center{
+    text-align: center;
+}
+
+input[type=submit] {
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #010024;
+    padding: 10px;
+    width: 120px;
+    margin-top: 17px;
+    border: 1px solid #010024;
+    border-radius: 4px;
+    
+}
+
+input[type=submit]:hover {
+    cursor: pointer;
+    color: white;
+    border-color: #c51417;
+    background-color: #c51417;
+}
+
+
+fieldset {
+    border-radius: 4px;
+    border: #c51417;
+    border-style: solid;
+}
+
+input[type=text],
+textarea {
+    border: 1px solid #c51417
+}
